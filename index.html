@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelp Clone</title>
+</head>
+<body>
+    <div class="main-wrap">
+        <nav class="main-nav-container">
+            <div class="nav-top-container">
+                <div class="open-in-app-container">
+                    <div class="open-container">
+                        <span><svg width="16" height="16" class="icon_svg"><path d="M10.5 1.25h-5A2.253 2.253 0 0 0 3.25 3.5v9a2.253 2.253 0 0 0 2.25 2.25h5a2.253 2.253 0 0 0 2.25-2.25v-9a2.253 2.253 0 0 0-2.25-2.25Zm-5 1.5h5a.751.751 0 0 1 .75.75v.75h-6.5V3.5a.751.751 0 0 1 .75-.75Zm5.75 3v4.5h-6.5v-4.5h6.5Zm-.75 7.5h-5a.751.751 0 0 1-.75-.75v-.75h6.5v.75a.751.751 0 0 1-.75.75Z"></path></svg></span>
+                        <p>Open in App</p>
+                    </div>
+                </div>
+                <a href="#" class="yelp-logo-container">
+                    <div class="yelp-logo"></div>
+                </a>
+                <div class="menu-bar-container">
+                    <button>
+                        <div><span><svg width="24" height="24" class="icon_svg"><path d="M20 13H4a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2Zm0 6H4a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2Zm0-12H4a1 1 0 0 1 0-2h16a1 1 0 1 1 0 2Z"></path></svg></span></div>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-bottom-container">
+                <div class="nav-bottom">
+                    <div class="user-search-container">
+                        <div class="search-container"><span><svg width="18" height="18" class="icon_svg"><path d="M15.913 14.224a1.324 1.324 0 0 0-.3-.466h.009l-3.377-3.376a5.492 5.492 0 0 0 .802-2.857 5.523 5.523 0 1 0-5.522 5.52 5.491 5.491 0 0 0 2.856-.801l3.369 3.369.004.003c.132.131.293.231.471.298.143.053.296.086.458.086.727 0 1.317-.589 1.317-1.316 0-.163-.033-.317-.087-.46zM7.525 10.94a3.422 3.422 0 0 1-3.418-3.416 3.422 3.422 0 0 1 3.418-3.417 3.422 3.422 0 0 1 3.416 3.417 3.421 3.421 0 0 1-3.416 3.416z"></path></svg></span></div>
+                        <div class="search-text">
+                            <input id="search_description" type="search" placeholder="e.g. tacos, Mel's" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="main-content-wrap">
+                <section class="category-content-container">
+                    <div class="category-container">
+                        <div class="categories">
+                            <div class="cate-top">
+                            <div class="category-image-text">
+                                <div class="image-text-cate">
+                                    <a href="#"><img src="assets/images/restaurent-img.png" alt=""><div class="text-cate"><p>Restaurants</p></div></a>
+                                </div>
+                            </div>
+                            <div class="category-image-text">
+                                <div class="image-text-cate">
+                                    <a href="#"><img src="assets/images/reservation-img.png" alt=""><div class="text-cate"><p>Reservations</p></div></a>
+                                </div>
+                            </div>
+                            <div class="category-image-text">
+                                <div class="image-text-cate">
+                                    <a href="#"><img src="assets/images/takeout-img.png" alt=""><div class="text-cate"><p>Takeout</p></div></a>
+                                </div>
+                            </div>
+                            <div class="category-image-text">
+                                <div class="image-text-cate">
+                                    <a href="#"><img src="assets/images/autorepair-img.png" alt=""><div class="text-cate"><p>Auto Repair</p></div></a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="cate-top">
+                            <div class="category-image-text">
+                                <div class="image-text-cate">
+                                    <a href="#"><img src="assets/images/movers-img.png" alt=""><div class="text-cate"><p>Movers</p></div></a>
+                                </div>
+                            </div>
+                            <div class="category-image-text">
+                                <div class="image-text-cate">
+                                    <a href="#"><img src="assets/images/pluber-img.png" alt=""><div class="text-cate"><p>Plumbers</p></div></a>
+                                </div>
+                            </div>
+                            <div class="category-image-text">
+                                <div class="image-text-cate">
+                                    <a href="#"><img src="assets/images/homeclean-img.png" alt=""><div class="text-cate"><p>Home Cleaners</p></div></a>
+                                </div>
+                            </div>
+                            <div class="category-image-text">
+                                <div class="image-text-cate">
+                                    <a href="#"><img src="assets/images/more-img.png" alt=""><div class="text-cate"><p>More</p></div></a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="service-container">
+                    <div class="service-head-container">
+                        <h2><span>Services & Professionals</span></h2>
+                    </div>
+                    <div class="service-content-container">
+                        <div class="service-content">
+                            <div class="service-cards">
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Automotive</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Apartments</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Sewing & Alterations</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Plumbing</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Keys & Locksmiths</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Mobile Phone Repair</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Laundromate</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Movers</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Heating & Air Conditioning/HVAC</p></div></a>
+                                    </div>
+                                </div>
+                                <div class="service-image-text">
+                                    <div class="image-text">
+                                        <a href="#"><img src="assets/images/automotive-img.png" alt=""><div class="text-cate"><p>Appliances & Repair</p></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="open-yelp-container">
+                    <div class="app-button-container">
+                        <button><span>Open in the Yelp App</span></button>
+                    </div>
+                </section>
+                <section class="hot-new-container">
+                    <div class="hot-head">
+                        <div class="head-container">
+                            <h2>Hot New Businesses Nearby</h2>
+                        </div>
+                    </div>
+                    <div class="shops-content-container">
+                        <a href="#">
+                            <div class="shops-container">
+                                <div class="shops-content">
+                                    <div class="shop-image-container">
+                                        <div class="shop-image"><img src="assets/images/hotnew1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="shop-detail-container">
+                                        <div class="shop-head"><p>Taishan Cuisine</p></div>
+                                        <div class="shop-star-container">
+                                            <div class="shop-star">
+                                                <div class="star-cont">
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(251,67,60,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(251,67,60,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(251,67,60,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(251,67,60,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(251,67,60,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(251,67,60,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(251,67,60,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(251,67,60,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div id="star-l"><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(251,67,60,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(251,67,60,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                </div>
+                                            </div>
+                                            <div class="star-num"><span>7</span></div>
+                                        </div>
+                                        <span class="star-num" id="shop-subhead"><span>Chinese</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="shops-container">
+                                <div class="shops-content">
+                                    <div class="shop-image-container">
+                                        <div class="shop-image"><img src="assets/images/hotnew2.jpg" alt=""></div>
+                                    </div>
+                                    <div class="shop-detail-container">
+                                        <div class="shop-head"><p>Señor Sisig</p></div>
+                                        <div class="shop-star-container">
+                                            <div class="shop-star">
+                                                <div class="star-cont">
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div id="star-l"><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                </div>
+                                            </div>
+                                            <div class="star-num"><span>20</span></div>
+                                        </div>
+                                        <span class="star-num" id="shop-subhead"><span>Aslan Fusion, Filipino, Mexican</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="shops-container">
+                                <div class="shops-content">
+                                    <div class="shop-image-container">
+                                        <div class="shop-image"><img src="assets/images/hotnew3.jpg" alt=""></div>
+                                    </div>
+                                    <div class="shop-detail-container">
+                                        <div class="shop-head"><p>La Travesia</p></div>
+                                        <div class="shop-star-container">
+                                            <div class="shop-star">
+                                                <div class="star-cont">
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                    <div id="star-l"><svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg></div>
+                                                </div>
+                                            </div>
+                                            <div class="star-num"><span>14</span></div>
+                                        </div>
+                                        <span class="star-num" id="shop-subhead"><span>Breakfast & Brunch, Latin American,</span><span class="subhead-l">Mexican</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <section class="open-yelp-container" id="view-more">
+                        <div class="app-button-container" id="view-more-btn">
+                            <button><span>View More New Businesses</span></button>
+                        </div>
+                    </section>
+                </section>
+                <section class="restaurants-in-city">
+                    <div class="best-rest-head">
+                        <div class="rest-head"><span>Best restaurants in top cities</span></div>
+                    </div>
+                    <div class="rest-content">
+                        <li><p><a href="#">Restaurants in Atlanta</a></p></li>
+                        <li><p><a href="#">Restaurants in Austin</a></p></li>
+                        <li><p><a href="#">Restaurants in Chicago</a></p></li>
+                        <li><p><a href="#">Restaurants in Dellas</a></p></li>
+                        <li><p><a href="#">Restaurants in Denver</a></p></li>
+                        <li><p><a href="#">Restaurants in Fort Worth</a></p></li>
+                        <li><p><a href="#">Restaurants in Houston</a></p></li>
+                        <li><p><a href="#">Restaurants in Las Vegas</a></p></li>
+                        <li><p><a href="#">Restaurants in Los Angeles</a></p></li>
+                        <li><p><a href="#">Restaurants in Miami</a></p></li>
+                        <li><p><a href="#">Restaurants in New York</a></p></li>
+                        <li><p><a href="#">Restaurants in San Antonio</a></p></li>
+                        <li><p><a href="#">Restaurants in San Diego</a></p></li>
+                        <li><p><a href="#">Restaurants in San Francisco</a></p></li>
+                        <li class="rest-li-l"><p><a href="#">Restaurants in Seattle</a></p></li>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div class="footer-container">
+                    <!-- For-laptop-view -->
+                    <div class="tab-footer-menu-cotainer">
+                        <div class="tab-footer-menu">
+                            <div class="tab-footer-menu-head">
+                                <span>About</span>
+                            </div>
+                            <ul class="tab-menu-content">
+                                <li><a href="#">About Yelp</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Inventor Relations</a></li>
+                                <li><a href="#">Trust & Safety</a></li>
+                                <li><a href="#">Content Guidlines</a></li>
+                                <li><a href="#">Accessibility Statment</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Add Choices</a></li>
+                                <li><a href="#">Your Privacy Choices</a></li>
+                            </ul>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <!-- <div class="footer-lang-container">
+                            <div class="lang-container">
+                                <span class="lang-head">Languages</span>
+                                <div class="lang-subhead"><a href="#">
+                                    <span class="subhead">English</span>
+                                    <span class="lang-drop"><svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg></span>
+                                </a></div>
+                            </div>
+                            <div class="lang-container" id="lang-l">
+                                <span class="lang-head">Cities</span>
+                                <div class="lang-subhead"><a href="#">
+                                    <span class="subhead" id="sub-head">Explore a City</span>
+                                    <span class="lang-drop"><svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg></span>
+                                </a></div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- end -->
+                    <div class="footer-lang-container">
+                        <div class="lang-container">
+                            <span class="lang-head">Languages</span>
+                            <div class="lang-subhead"><a href="#">
+                                <span class="subhead">English</span>
+                                <span class="lang-drop"><svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg></span>
+                            </a></div>
+                        </div>
+                        <div class="lang-container" id="lang-l">
+                            <span class="lang-head">Cities</span>
+                            <div class="lang-subhead"><a href="#">
+                                <span class="subhead" id="sub-head">Explore a City</span>
+                                <span class="lang-drop"><svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg></span>
+                            </a></div>
+                        </div>
+                    </div>
+                    <div class="footer-menu-container">
+                        <ul>
+                            <li>
+                                <div class="menu-links">
+                                    <span><a href="#">About</a></span>
+                                    <div class="dot"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-links">
+                                    <span><a href="#">Blog</a></span>
+                                    <div class="dot"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-links">
+                                    <span><a href="#">Support</a></span>
+                                    <div class="dot"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-links">
+                                    <span><a href="#">Terms</a></span>
+                                    <div class="dot"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-links" id="menu-links1">
+                                    <span><a href="#">Privacy Policy</a></span>
+                                    <div class="dot"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-links" id="menu-links2">
+                                    <span><a href="#">Your Privacy Choices</a></span>
+                                    <div class="dot"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-add-container">
+                        <span>Add a Business on Yelp</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="footer-end-container">
+                        <div class="footer-end-content">
+                            <div class="end-text">
+                                <p>Copyright © 2004–2025 Yelp Inc. Yelp, Elite Squad, 
+                                    <img class="end-img-1" style="height: 19px; width: 38px;" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/7ef71bf77a33/assets/img/brand/logo_desktop.svg" alt="">, 
+                                    <img class="end-img-2" style="height: 16px; width: 14px;" src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/cabcef1daea2/assets/img/brand/burst_red.svg" alt="">
+                                    and related marks are registered trademarks of Yelp.
+                                </p>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
