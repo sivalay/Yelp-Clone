@@ -109,6 +109,7 @@ body, button, p, ul, li, a{
     flex: 1;
     background-color: #fff;
     border-radius: 4px;
+    overflow: hidden;
 }
 .search-container{
     display: flex;
@@ -403,6 +404,9 @@ footer{
     box-sizing: border-box;
     background-color: rgba(247, 247, 247, 1);
 }
+.tab-footer-menu-container{
+    display: none;
+}
 .footer-container{
     display: block;
     padding: 0px 24px;
@@ -490,6 +494,17 @@ footer{
     margin-right: -1px;
     font-family: 'OpenSansSemibold';
 }
+.manu-links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 .footer-add-container{
     display: block;
     margin-top: 24px;
@@ -535,7 +550,91 @@ footer{
 }
 
 @media screen and (min-width:601px) {
+    .head-container h2{
+        font-family: 'PoppinsBold';
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .shops-container{
+        padding-bottom: 13px;
+    }
+    .shop-detail-container{
+        width: 100%;
+    }
+    #shop-subhead{
+        display: flex;
+    }
+    .shop-star-container{
+        height: 20px;
+    }
+    .subhead-l{
+        padding-top: 2px;
+    }
+    .rest-head{
+        height: 36px;
+    }
+    .rest-head span{
+        padding-top: 12px;
+    }
+    /* footer */
+    footer{
+        padding: 64px 0px;
+    }
+    .footer-container{
+        padding: 0px 32px;
+    }
     .footer-menu-container{
+        display: none;
+    }
+    #lang-for-mob-view{
+        display: none;
+    }
+    .tab-footer-menu-cotainer{
+        display: flex;
+        /* flex-flow: row; */
+        min-width: 100%;
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .tab-footer-menu{
+        display: block;
+        flex: 1;
+        margin: 0px 12px;
+    }
+    #menu-head{
+        margin-bottom: 12px;
+    }
+    .tab-menu-content li{
+        margin-bottom: 8px;
+        line-height: 19px;
+    }
+    .tab-menu-content li a{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.0px;
+        font-family: 'OpenSansSemibold';
+        color: rgba(107, 109, 111, 1);
+    }
+    .footer-lang-container{
+        display: block;
+        flex: 1;
+        margin: 0px 12px;
+    }
+    .footer-add-container{
+        margin-top: 46px;
+    }
+    .divider{
+        margin-top: 48px;
+    }
+    .footer-end-container{
+        margin-top: 32px;
+    }
+}
+
+@media screen and (min-width:750px) {
+    .search-container{
         display: none;
     }
 }
