@@ -541,7 +541,6 @@ footer{
     align-items: center; */
 }
 
-
 @media screen and (min-width:601px) {
     .head-container h2{
         font-family: 'PoppinsBold';
@@ -696,7 +695,7 @@ footer{
         background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/2d2a7a4342fc/assets/img/brand/logo_desktop_white.svg);
         background-repeat: no-repeat;
         background-size: 80px 40px;
-        margin-top: 4px;
+        /* margin-top: 4px; */
     }
     .lap-search-input{
         display: block;
@@ -704,9 +703,63 @@ footer{
         flex: 1;
         box-sizing: border-box;
     }
+    .lap-search-container{
+        height: 48px;
+        max-width: 1000px;
+        display: block;
+        position: relative;
+        flex-grow: 1;
+        box-sizing: border-box;
+    }
     .lap-inputs{
         display: flex;
+        border-radius: 4px;
         /* flex-flow: row; */
+        overflow: hidden;
+    }
+    .things-contaier{
+        display: flex;
+        position: relative;
+        flex: 1;
+        border-radius: 4px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: #fff;
+    }
+    .things-input{
+        width: 100%;
+        display: inline-flex;
+        position: relative;
+    }
+    .things-input input{
+        /* width: 100%; */
+        height: 22px;
+        display: block;
+        position: relative;
+        color: rgba(200,201,202,1);
+        font-family: 'OpenSansRegular';
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 20px;
+        letter-spacing: 0;
+        /* margin: 4px 0 calc(4px + 18px); */
+        padding: 13px 16px;
+        border: none;
+    }
+    #place-input input{
+        color: #2d2e2f !important;
+    }
+    .search-button-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lap-nav-right-container{
+        width: 100%;
+        order: 3;
+    }
+    .drop-down-container{
+        display: flex;
     }
 }
 
