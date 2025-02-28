@@ -340,6 +340,7 @@ body, button, p, ul, li, a{
     color: rgba(107, 109, 111, 1);
     margin-top: 1px;
 }
+
 #shop-subhead span{
     display: block;
     padding-top: 2px;
@@ -362,6 +363,7 @@ body, button, p, ul, li, a{
 #view-more-btn button span{
     margin-top: 1px;
 }
+
 /* _____Section-Best_____ */
 
 .restaurants-in-city{
