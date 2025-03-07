@@ -748,6 +748,7 @@ footer{
         padding: 13px 16px;
         border: none;
     }
+    
     #place-input input{
         color: #2d2e2f !important;
     }
@@ -763,11 +764,7 @@ footer{
     .drop-down-container{
         display: flex;
     }
-    .lap-search{
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
+    
 }
 
 
